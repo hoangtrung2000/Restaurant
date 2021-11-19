@@ -437,6 +437,131 @@ header .icons #menu-bars{
   font-size: 2.5rem;
 }
 
+.review .slide{
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: .1rem solid rgba(0,0,0,.2);
+  border-radius: .5rem;
+  position: relative;
+}
+
+.review .slide .fa-quote-right{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: #ccc;
+}
+
+.review .slide .user{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.review .slide .user img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .slide .user h3{
+  color: var(--black);
+  font-style: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.review .slide .user i{
+  font-style: 1.3rem;
+  color:var(--green);
+}
+
+.review .slide p{
+  font-style: 1.5rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+
+.order form{
+  max-width: 90rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  border: .1rem solid rgba(0,0,0,.2);
+  background: #fff;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.order form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order form .inputBox .input{
+  width: 49%;
+}
+
+.order form .inputBox .input span{
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+  background: #eee;
+  border-radius: .5rem ;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.order form .inputBox .input input:hover,
+.order form .inputBox .input textarea:hover{
+  border: .1rem solid var(--green);
+}
+
+.order form .inputBox .input textarea{
+  height: 20rem;
+  resize: none;
+}
+
+.order form .btn{
+  margin-top: 0;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.footer .box-container .box a{
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color:var(--light-color);
+}
+
+.footer .box-container .box a:hover{
+  color:var(--green);
+  text-decoration: underline;
+}
+
+
 @media (max-width: 991px){
   html{
     font-size: 55%;
@@ -487,7 +612,7 @@ header .navbar.active{
 
 }
 
-@media (max-width: 991px){
+@media (max-width: 450px){
   htlm{
     font-size: 50%;
   }
@@ -496,6 +621,10 @@ header .navbar.active{
   }
   .dishes .box-container .box img{
     height: auto;
+    width: 100%;
+  }
+
+  .order form .inputBox .input{
     width: 100%;
   }
 
